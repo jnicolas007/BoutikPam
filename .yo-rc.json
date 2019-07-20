@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.holycode.boutikpam",
+      "nativeLanguage": "fr"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "BoutikPam",
+    "packageName": "com.holycode.boutikpam",
+    "packageFolder": "com/holycode/boutikpam",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjlmZjdjZmQ3MmFmYmVmNzg5MjEzZjQwYjI2YmE1ZDMzMGM2MmU1NDA0Yzg5ZDdiNjg2OTRjYWY1NTAyNjVlNmVjMzZlODhjYTljNmE4NmZhMmVjMmQyY2E2MDg4NzE1MjBhNDAyMzRjNTYyYmFkOTUyYmVkZTUzMWM0MWZhMTc=",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "fr",
+    "languages": ["fr", "en"]
+  }
+}
