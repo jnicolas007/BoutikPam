@@ -65,7 +65,7 @@ public class ProductService {
 
     /**
      * Delete the product by id.
-     *
+     * good
      * @param id the id of the entity.
      */
     public void delete(Long id) {
