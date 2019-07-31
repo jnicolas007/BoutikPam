@@ -1,7 +1,7 @@
 <div>
     <h2 id="page-heading">
         <span jhiTranslate="boutikPamApp.shipment.home.title">Shipments</span>
-        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-shipment" [routerLink]="['/shipment/new']">
+        <button *jhiHasAnyAuthority="'ROLE_ADMIN'" id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-shipment" [routerLink]="['/shipment/new']">
             <fa-icon [icon]="'plus'"></fa-icon>
             <span  jhiTranslate="boutikPamApp.shipment.home.createLabel">
             Create new Shipment
