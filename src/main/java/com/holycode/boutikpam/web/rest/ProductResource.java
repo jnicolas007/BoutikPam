@@ -54,7 +54,7 @@ public class ProductResource {
      * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new product, or with status {@code 400 (Bad Request)} if the product has already an ID.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PreAuthorize("HasAuthority('ADMIN_ROLE')")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     @PostMapping("/products")
     public ResponseEntity<Product> createProduct(@Valid @RequestBody Product product) throws URISyntaxException {
         log.debug("REST request to save Product : {}", product);
