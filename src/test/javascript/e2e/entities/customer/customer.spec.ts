@@ -43,7 +43,7 @@ describe('Customer e2e test', () => {
       customerUpdatePage.setFirstNameInput('firstName'),
       customerUpdatePage.setLastNameInput('lastName'),
       customerUpdatePage.genderSelectLastOption(),
-      customerUpdatePage.setEmailInput('email'),
+      customerUpdatePage.setEmailInput('email@email.com'),
       customerUpdatePage.setPhoneInput('phone'),
       customerUpdatePage.setAddressLine1Input('addressLine1'),
       customerUpdatePage.setAddressLine2Input('addressLine2'),
@@ -53,7 +53,7 @@ describe('Customer e2e test', () => {
     ]);
     expect(await customerUpdatePage.getFirstNameInput()).to.eq('firstName', 'Expected FirstName value to be equals to firstName');
     expect(await customerUpdatePage.getLastNameInput()).to.eq('lastName', 'Expected LastName value to be equals to lastName');
-    expect(await customerUpdatePage.getEmailInput()).to.eq('email', 'Expected Email value to be equals to email');
+    expect(await customerUpdatePage.getEmailInput()).to.eq('email@email.com', 'Expected Email value to be equals to email');
     expect(await customerUpdatePage.getPhoneInput()).to.eq('phone', 'Expected Phone value to be equals to phone');
     expect(await customerUpdatePage.getAddressLine1Input()).to.eq(
       'addressLine1',
